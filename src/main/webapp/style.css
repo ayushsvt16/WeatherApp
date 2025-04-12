@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+.errorMessage {
+    text-align: center;
+    margin-top: 20px;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom,  #38b6ff,#c1ff72);
+}
+
+.mainContainer {
+    width: 400px; /* Set a fixed width */
+    height: 400px; /* Set a fixed height */
+    margin: 0 auto; /* Center the box */
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 2.5);
+    border-radius: 10px;
+    /*display: flex;*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box; /* Ensure padding is included in height/width */
+}
+.errorMessage {
+    text-align: center;
+    margin-top: 20px;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.searchInput {
+  position: sticky; /* Keep the search bar at the top */
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 10; /* Make sure it stays above other content */
+ }
+
+.searchInput input {
+  width: 100%;
+  height: 2rem;
+  outline: black;
+  font-size: 1rem;
+  color: #525050;
+  padding: 0.2rem 0.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid #b3b3b3;
+}
+
+.searchInput input:focus {
+  border: 1px solid #9c9dde;
+}
+
+.searchInput button {
+  width: 2.2rem;
+  height: 2rem;
+  cursor: pointer;
+  color: #9b9b9b;
+  border-radius: 50%;
+  margin-left: 0.4rem;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  border: 1px solid #b3b3b3;
+}
+
+.searchInput button:hover {
+  color: #fff;
+  background-color: #9c9dde;
+  border: 1px solid #9c9dde;
+}
+
+.cityDetails {
+  color: #323232;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.cityDetails .date {
+  color: #323232;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.windDetails {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.windDetails .humidityBox,
+.windDetails .windSpeed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.weatherIcon {
+  display: flex;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  justify-content: center;
+}
+
+.weatherIcon img {
+  max-width: 100%;
+  width: 8rem;
+}
+
+.weatherDetails .temp{
+ font-size: 2rem;
+}
+
+.windDetails .humidity .humidityValue {
+ text-align: center;
+  font-size: 2rem;
+  color: #323232;
+}
+
+.windDetails .humidityBox img {
+  max-height: 3rem;
+  margin-right: 0.5rem;
+}
+
+.windDetails .windboxline img {
+  max-height: 3rem;
+  margin-right: 0.5rem;
+}
+
+
+.windDetails .windSpeed img {
+  max-height: 3rem;
+  margin-right: 0.5rem;
+}
+
+
+image-logo{
+        height: auto;
+        width: auto;
+        filter: drop-shadow(20px 10px 10px black);
+      }
