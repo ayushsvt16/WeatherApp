@@ -1,10 +1,8 @@
 FROM tomcat:9.0-jdk17
 
-# Clean default apps
-RUN rm -rf /usr/local/tomcat/webapps/*
+RUN rm -rf /usr/local/tomcat/webapp/*
 
-# Copy your webapp folder into Tomcat (adjust path if different)
-COPY ./ /usr/local/tomcat/webapps/ROOT/
+COPY webapp/ /usr/local/tomcat/webapp/ROOT/
 
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
